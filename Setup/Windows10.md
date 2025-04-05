@@ -9,4 +9,5 @@ Note, to actually do this you have to set your preferred DNS server to the IP of
 
 ![Screenshot 2025-04-04 194723](https://github.com/user-attachments/assets/d163e393-c7b4-4586-bb0d-4dedcc8ea64b)
 
-After joining to the domain, the computer restarts and we need to login as the user 'Arthur' we made as the Domain Controller.
+After joining to the domain, the computer restarts and I logged in as the user 'Arthur' in the Windows machine.
+
