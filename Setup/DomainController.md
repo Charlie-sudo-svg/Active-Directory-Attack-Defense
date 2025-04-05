@@ -10,3 +10,10 @@ After clicking through all of the options, promote the server to a domain contro
 ![Screenshot 2025-03-29 202609](https://github.com/user-attachments/assets/cd8801a0-9b8a-4256-b49f-faf738780f67)
 
 Now that Active Directory is officially set up, we can add our windows 11 machine to the directory.
+
+## Adding Users
+
+The next step is to add a user. For this project, only one user will be added to the domain but more may be added in the future. To add a user, I went to server manager and clicked 'tools', then 'Active Directory Users and Computers.' After navigating to the domain I created a new OU (Organizational Unit) named Executives.
+From there, I created a user called Arthur Morris with the username 'ArthurM' and password 'p@SSw0Rd'
+
+![Screenshot 2025-04-04 201130](https://github.com/user-attachments/assets/2ef5980d-b6ed-4c25-8fb0-deaea49240e6)
