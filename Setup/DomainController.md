@@ -17,3 +17,13 @@ The next step is to add a user. For this project, only one user will be added to
 From there, I created a user called Arthur Morris with the username 'ArthurM' and password 'p@SSw0Rd'
 
 ![Screenshot 2025-04-04 201130](https://github.com/user-attachments/assets/2ef5980d-b6ed-4c25-8fb0-deaea49240e6)
+
+## Setting up DNS
+
+Now that the users are added thats great! The only issue is, my user can't access the internet due to a DNS issue. This happens because when the Windows 10 machine connects to the domain, the DNS server on the machine has to be that of the Windows Server. To fix this, I set up DNS Forwarding on the Windows Server. 
+
+I typed in Win + R and dnsmgmt.msc to open up the DNS manager. After this, I right clicked my servers name and clicked on properties.
+
+The next step is to go to the Forwarders tab and add `8.8.8.8` as one of the forwarders. This fixes the DNS issue I had on the Windows 10 machine.
+
+![Screenshot 2025-04-04 202340](https://github.com/user-attachments/assets/d63a2f09-d952-40f6-b00d-df01fc9d9ff7)
