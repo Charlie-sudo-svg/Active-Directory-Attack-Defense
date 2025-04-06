@@ -1,2 +1,0 @@
-# Enumerating Active Directory
-
