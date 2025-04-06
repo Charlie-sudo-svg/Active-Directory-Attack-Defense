@@ -21,4 +21,9 @@ below:
 
 ![Screenshot 2025-04-05 215849](https://github.com/user-attachments/assets/5da80a4e-7a86-45c9-b0c4-7f3ea8437718)
 
-From this screenshot, I can see some of the potential usernames we can use to login with, as well as domain allowing us to create sessions using blank usernames and passwords. Time to brute 
+From this screenshot, I can see some of the potential usernames we can use to login with, as well as domain allowing us to create sessions using blank usernames and passwords. Time to use the swiss army knife of penetration testing: crackmapexec.
+
+"CrackMapExec, or CME, is a post-exploitation tool developed in Python and designed for penetration testing against networks. CrackMapExec collects Active Directory information to conduct lateral movement through targeted networks." 
+
+(Source: https://attack.mitre.org/software/S0488/)
+
