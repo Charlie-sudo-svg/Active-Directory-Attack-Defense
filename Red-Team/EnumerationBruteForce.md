@@ -27,3 +27,19 @@ From this screenshot, I can see some of the potential usernames we can use to lo
 
 (Source: https://attack.mitre.org/software/S0488/)
 
+I ran the command `crackmapexec smb 10.0.2.10 -u 'administrator' -p passwords.txt` passwords.txt is a special file I made with a few passwords and one that was the actual right password only so I didn't have to wait around for brute force.
+
+![Screenshot 2025-04-05 230128](https://github.com/user-attachments/assets/86d34f3e-7cc9-4d5a-8421-252472fbf1ce)
+
+With the SMB password found, its time to login to a share. But which share exactly? I used `smbclient -L //10.0.2.10 -U administrator
+` To figure that out.
+
+![Screenshot 2025-04-05 230629](https://github.com/user-attachments/assets/f2dc14d9-5667-4ea7-b3f1-f074024a18ec)
+
+It looks like the variable $C is the default share. Using `smbclient -U Administrator //10.0.2.10/$C` I was able to login to the share and gain access to it.
+
+
+![Screenshot 2025-04-05 230814](https://github.com/user-attachments/assets/149d1bff-b534-43d7-aa48-c22cd6098a13)
+
+
+Although there was nothing interesting when I when into the Users and Administrator directory, in a real world organization this could cause devastation among other things. Sensitive information, passwords, and databases could all be stored on here or within reach. 
