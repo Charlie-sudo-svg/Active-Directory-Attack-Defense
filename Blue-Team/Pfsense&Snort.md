@@ -29,3 +29,7 @@ The first thing I had to do was set up the firewall rule for OPT1, this is the K
 The rule just outlines that any type of traffic from OPT1 can come through the firewall. Just pretend that OPT1 is regular internet traffic, because I am using VM's its a little harder to actually simulate regular network traffic. As far as I'm concered, OPT1 is just the internet, and people access the internet all the time, including our attacker. 
 
 Now that the attacker than ping the firewall it can also ping the machines inside the firewall, which can lead to attacks if not secured. 
+
+## Step 3: Installing Snort
+
+The next step is to install Snort to alert me of any suspicious activity happening on the network. If I was an analyst, I'd have no idea an attack was happening unless I did some really deep digging or I got an alert. Once we set up Snort and get an alert, we can properly take action by blocking the IP over the firewall.
