@@ -41,4 +41,22 @@ After setting those policies I ran `gpupdate /force` in command prompt to force 
 
 Last but not least, I enabled SMBv1 to really misconfigure this server.
 
-I used  `Enable-WindowsOptionalFeature -Online -FeatureName "SMB1Protocol" -All` to enable smbv1. This should be all we need to start attacking the machine!
+I used  `Enable-WindowsOptionalFeature -Online -FeatureName "SMB1Protocol" -All` to enable smbv1. 
+
+## Opening FTP 
+
+This is how we are mainly going to access the machine.
+
+I went to server manager -> Add Roles and Features -> Added Web Server (IIS)
+
+After clicking through the menu I then added the feature of the FTP server to come with the Web Server package I installed.
+
+The next step is to open dsa.msc using win+r and adding a new user called admin with password Iamadmin123
+
+When I created the new user, I then went to IIS in server manager and created a new FTP site below
+
+![image](https://github.com/user-attachments/assets/5d542823-cb53-4696-8ae8-e8e7d5ad171a)
+
+Clicking through the menu I made sure to select no SSL and Basic authentication with all users allowed to read and write.
+
+
